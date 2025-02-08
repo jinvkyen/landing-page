@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        font-family: sans-serif;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    #header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #dca307;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    #header-img{
+        height: 100px;
+        width: auto;
+    }
+    #section1{
+        background-color: #d4d4d4;
+        margin-top: 100px;
+    }
+    #section3{
+        background-color: #172661;
+        color: #d4d4d4;
+    }
+    #nav-bar{
+        display: flex;
+        flex-direction: row;
+        margin: 20px;
+        padding-right: 30px;
+        gap: 50px;
+    }
+    #nav-bar, .nav-link{
+        text-align: center;
+        text-wrap: nowrap;
+        text-decoration: none;
+        color: #000;
+    }
+    #nav-bar, .nav-link:hover{
+        color: white;
+    }
+    .section-title{
+        text-align: justify;
+        margin: 50px 20px 20px 35px;
+    }
+    .description{
+        text-align: left;
+        margin: 0 50px 20px 50px;
+    }
+    #videos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-shrink: 1;
+        padding: 50px;
+    }
+    #form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #dca307;
+        padding: 20px;
+        gap: 20px;
+    }
+    input[type="email"]{
+        padding: 10px;
+        width: 30%;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+    input[type="submit"]{
+        padding: 10px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        background-color: #3633ff;
+        color: #d4d4d4;
+        border-radius: 50px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    input[type="submit"]:hover{
+        border: none;
+        cursor: pointer;
+        background-color: #172661;
+        color: #a2d1ff;
+    }
+    @media (max-width: 768px) {
+    
+    input[type="email"],
+    input[type="submit"] {
+        width: 80%;
+    }
+}
+</style>
+<body>
+    <header id="header">
+        <img id="header-img" src="https://logopond.com/logos/81ec6fd6246f3c0ef12dc8c30412bff9.png" alt="Image or logo of the website">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#section1">Section 1</a>
+            <a class="nav-link" href="#section2">Section 2</a>
+            <a class="nav-link" href="#section3">Section 3</a>
+        </nav>
+    </header>
+
+    <section id="section1">
+        <h2 class="section-title">Sabrina Carpenter</h2>
+        <p class="description">Sabrina Carpenter is the first to admit that it's taken her a bit of time to find her way to the top of the music industry. She even likens herself to the tortoise in the fable "The Tortoise and the Hare" — even if she didn't want to believe the metaphor growing up.</p>
+        
+        <section id="videos">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/cHIAN7NKvQ8?si=A6BrIRWEAVov3LbN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </section>
+
+    <section id="section2">
+        <h2 class="section-title">Grammy Winner</h2>
+        <p class="description">At the 2025 GRAMMYs, Carpenter’s chart-topping sixth album, Short n’ Sweet, was awarded Best Pop Vocal Album. It was one of two victories for the star, as she also took home Best Pop Solo Performance for the album’s viral hit "Espresso." The wins — as well as a highly entertaining performance of "Espresso" and "Please Please Please" — capped off a major breakthrough year for Carpenter, who earned six nominations in total including all four General Field Categories (Album Of The Year, Record Of The Year, Song Of The Year, and Best New Artist).</p>
+        
+        <section id="videos">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/cHIAN7NKvQ8?si=A6BrIRWEAVov3LbN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </section>
+
+    <section id="section3">
+        <h2 class="section-title">Winning Speech</h2>
+        <p class="description">"I'm still out of breath from the performance!" Carpenter quipped, returning to the stage to pick up her GRAMMY just minutes after wowing the audience with a performance of hits "Espresso" and "Please Please Please" that was filled with slapstick humor and showgirl finesse.<br>
+
+            <br>Her emotional acceptance speech also included wide-eyed appreciation for the other artists in the Category, her collaborators and her family. Visibly overwhelmed by the honor, Carpenter accidentally let some swear words slip. "What the hell — I don't know if I'm allowed to say hell, but I said it three times now," she quipped, before concluding with, "Thank you holy s— bye!"</p>
+        
+        <section id="videos">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/cHIAN7NKvQ8?si=A6BrIRWEAVov3LbN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </section>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
