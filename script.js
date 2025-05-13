@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
     2.5
   );
 
-
   ScrollTrigger.create({
     start: "top -10%",
     end: 99999,
@@ -152,10 +151,11 @@ document.addEventListener("DOMContentLoaded", function () {
           ease: "power3.inOut",
         });
       }
+
+
     });
   });
 });
-
 ScrollTrigger.create({
   trigger: ".hero",
   start: "top top",

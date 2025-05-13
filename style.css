@@ -26,6 +26,7 @@
       color: var(--white);
       line-height: 1.6;
       overflow-x: hidden;
+      background-color: var(--deep-blue);
     }
 
     h1, h2, h3, h4 {
@@ -167,12 +168,6 @@
       top: 0;
       bottom: auto;
       opacity: 1;
-      background-color: var(--deep-blue);
-        --mask:
-          radial-gradient(56.6px at 50% calc(100% - 78px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
-          radial-gradient(56.6px at 50% calc(100% + 48px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
-        -webkit-mask: var(--mask);
-                mask: var(--mask);
 
     }
 
@@ -232,8 +227,10 @@
       flex-direction: column;
       padding: 4rem 2rem;
       position: relative;
-
+      border-top-left-radius: 4.125rem;
+      border-top-right-radius: 4.125rem;
       background: url("https://i.pinimg.com/736x/5c/8c/67/5c8c67d3c5a64d138c6f67689b73cb36.jpg") no-repeat center center/cover;
+      scroll-snap-type: y mandatory;
     }
 
     /* Scroll indicator */
