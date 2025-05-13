@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   tl.to(
     ".corner",
     {
-      duration: 2.5,
+      duration: 25,
       opacity: 10,
       stagger: 0.25,
       ease: "power3.out",
@@ -154,4 +154,12 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+});
+
+ScrollTrigger.create({
+  trigger: ".hero",
+  start: "top top",
+  end: "bottom top",
+  toggleClass: { targets: "#mainNav", className: "sticky" },
+  markers: false,
 });
