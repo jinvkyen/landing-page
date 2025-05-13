@@ -6,7 +6,7 @@
       --charcoal: #1c1c1c;
       --light-bg: #f5f5f5;
       --text-color: #b0acac;
-      --deep-purple: #301934;
+      --deep-blue: #060B11;
       --red: #EB0029;
     }
 
@@ -23,7 +23,6 @@
 
     body {
       font-family: "Lato", sans-serif;
-      background-color: var(--charcoal);
       color: var(--white);
       line-height: 1.6;
       overflow-x: hidden;
@@ -168,7 +167,7 @@
       top: 0;
       bottom: auto;
       opacity: 1;
-      background-color: rgba(28, 28, 28, 0.95);
+      background-color: var(--deep-blue);
         --mask:
           radial-gradient(56.6px at 50% calc(100% - 78px),#000 99%,#0000 101%) calc(50% - 60px) 0/120px 100%,
           radial-gradient(56.6px at 50% calc(100% + 48px),#0000 99%,#000 101%) 50% calc(100% - 30px)/120px 100% repeat-x;
@@ -233,7 +232,8 @@
       flex-direction: column;
       padding: 4rem 2rem;
       position: relative;
-      border-radius: 2rem;
+
+      background: url("https://i.pinimg.com/736x/5c/8c/67/5c8c67d3c5a64d138c6f67689b73cb36.jpg") no-repeat center center/cover;
     }
 
     /* Scroll indicator */
