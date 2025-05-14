@@ -172,11 +172,15 @@
     }
 
     .nav-container {
-      width: 90%;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 90%;
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        width: 0%;
+      }
     }
 
     .nav-container .nav-links {
@@ -227,9 +231,7 @@
       justify-content: center;
       position: sticky;
       top: 0;
-      border-top-left-radius: 4.125rem;
-      border-top-right-radius: 4.125rem;
-      background: url("https://i.pinimg.com/736x/5c/8c/67/5c8c67d3c5a64d138c6f67689b73cb36.jpg") no-repeat center center/cover;
+      background: url("asset/wallpaper.jpg") no-repeat center center/cover;
     }
 
     /* Scroll indicator */
