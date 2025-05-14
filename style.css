@@ -220,17 +220,16 @@
 
     /* Additional sections for scroll effects */
     .section {
+      max-width: 100%;
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      padding: 4rem 2rem;
-      position: relative;
+      position: sticky;
+      top: 0;
       border-top-left-radius: 4.125rem;
       border-top-right-radius: 4.125rem;
       background: url("https://i.pinimg.com/736x/5c/8c/67/5c8c67d3c5a64d138c6f67689b73cb36.jpg") no-repeat center center/cover;
-      scroll-snap-type: y mandatory;
     }
 
     /* Scroll indicator */
