@@ -75,6 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleClass: { className: "scrolled", targets: "nav" },
   });
 
+
+// Navigation scroll animation
   const navLinks = document.querySelectorAll(".nav-link");
   navLinks.forEach((link) => {
     const linkTo = link.getAttribute("href");
@@ -162,4 +164,46 @@ ScrollTrigger.create({
   end: "bottom top",
   toggleClass: { targets: "#mainNav", className: "sticky" },
   markers: false,
+});
+
+// Observer for look animations
+const lookObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add('active');
+    } else {
+      entry.target.classList.remove('active');
+    }
+  });
+}, {
+  threshold: 0.5
+});
+
+document.querySelectorAll('.look').forEach(look => {
+  lookObserver.observe(look);
+});
+
+// Observer sections for animations
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add('active');
+    } else {
+      entry.target.classList.remove('active');
+    }
+  });
+}, {
+  threshold: 0.5
+});
+
+document.querySelectorAll('.section').forEach(section => {
+  sectionObserver.observe(section);
+});
+
+// animate the corners
+document.querySelectorAll('.corner').forEach((corner, index) => {
+  setTimeout(() => {
+    corner.style.opacity = 1;
+  }, 2000 + (index * 200)
+  );
 });
