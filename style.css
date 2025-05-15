@@ -234,6 +234,52 @@
       background: url("asset/wallpaper.jpg") no-repeat center center/cover;
     }
 
+    /* looks section */
+    .top-looks {
+      min-height: 100vh;
+      width: 100%;
+      position: relative;
+    }
+
+    .look {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      overflow: hidden;
+    }
+
+    .look-content {
+      display: flex;
+      width: 90%;
+      max-width: 1200px;
+      height: 80vh;
+      position: relative;
+      transform: translateY(50px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .look.active .look-content {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .look-number {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 12rem;
+      font-weight: 700;
+      color: var(--light-bg);
+      line-height: 1;
+      font-family: "Cinzel", serif;
+      z-index: -1;
+    }
+
+
     /* Scroll indicator */
     .scroll-indicator {
       position: absolute;
