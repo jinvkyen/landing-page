@@ -230,7 +230,6 @@
       align-items: center;
       justify-content: center;
       position: sticky;
-      top: 0;
       background: url("asset/wallpaper.jpg") no-repeat center center/cover;
     }
 
