@@ -153,8 +153,6 @@ document.addEventListener("DOMContentLoaded", function () {
           ease: "power3.inOut",
         });
       }
-
-
     });
   });
 });
@@ -166,44 +164,33 @@ ScrollTrigger.create({
   markers: false,
 });
 
-// Observer for look animations
+
+// Intersection Observer for look animations
 const lookObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting) {
-      entry.target.classList.add('active');
-    } else {
-      entry.target.classList.remove('active');
-    }
-  });
-}, {
-  threshold: 0.5
-});
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        } else {
+            entry.target.classList.remove('active');
+        }
+    });
+}, { threshold: 0.3 });
 
 document.querySelectorAll('.look').forEach(look => {
-  lookObserver.observe(look);
+    lookObserver.observe(look);
 });
 
-// Observer sections for animations
+// Observe sections for animations
 const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting) {
-      entry.target.classList.add('active');
-    } else {
-      entry.target.classList.remove('active');
-    }
-  });
-}, {
-  threshold: 0.5
-});
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        } else {
+            entry.target.classList.remove('active');
+        }
+    });
+}, { threshold: 0.3 });
 
 document.querySelectorAll('.section').forEach(section => {
-  sectionObserver.observe(section);
-});
-
-// animate the corners
-document.querySelectorAll('.corner').forEach((corner, index) => {
-  setTimeout(() => {
-    corner.style.opacity = 1;
-  }, 2000 + (index * 200)
-  );
+    sectionObserver.observe(section);
 });
